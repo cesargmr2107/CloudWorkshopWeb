@@ -20,6 +20,9 @@ def index():
     cursor.execute(query)
     items = [row for row in cursor.fetchall()]
 
+    # Close DB connection
+    db_connection.close()
+
     # Render and return template
     return render_template('index.html', items=items)
 
