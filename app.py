@@ -1,5 +1,6 @@
 import os
 import pyodbc
+import platform
 
 from flask import (Flask, redirect, render_template, request,
                    send_from_directory, url_for)
@@ -9,6 +10,9 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
+
+    # Check platform
+    platform = "IaaS" if platform.uname().node == "cw-iaas-app-vm" else "PaaS"
 
     # Connect to database
     db_connection_string = os.environ["SQLAZURECONNSTR_DB_CONNECTION_STRING"]
@@ -24,7 +28,7 @@ def index():
     db_connection.close()
 
     # Render and return template
-    return render_template('index.html', items=items)
+    return render_template('index.html', items=items, platform=platform)
 
 
 @app.route('/favicon.ico')
