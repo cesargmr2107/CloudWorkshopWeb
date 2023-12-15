@@ -11,7 +11,7 @@ app = Flask(__name__)
 def index():
 
     # Connect to database
-    db_connection_string = os.environ["DB_CONNECTION_STRING"]
+    db_connection_string = os.environ["SQLAZURECONNSTR_DB_CONNECTION_STRING"]
     db_connection = pyodbc.connect(db_connection_string)
 
     # Execute query
@@ -20,7 +20,7 @@ def index():
     cursor.execute(query)
     items = [row for row in cursor.fetchall()]
 
-    # Render and return templateñ
+    # Render and return template
     return render_template('index.html', items=items)
 
 
