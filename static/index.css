@@ -7,7 +7,9 @@ h1 {
     text-align: center;
     margin: 50px;
     font-family: 'Grandiflora One', cursive;
-    font-size: 3em
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
 }
 
 #item-list {
