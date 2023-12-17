@@ -7,16 +7,18 @@
     <meta http-equiv="X-UA-Compatible">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-</head>
+    <!-- App CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+  </head>
 <html>
    <body>
       <h1>My bucket list</h1>
-      <form action="/">
+      <span id="item-list">
         {% for item in items: %}
-        <div class="item">
+        <span class="item">
           <input type="checkbox" id="{{ item.id }}" name="{{ item.id }}" value="{{ item.id }}" {{ "checked" if item.completed else "" }}>
           <label for="{{ item.id }}">{{ item.description }}</label><br>
-        </div>
+        </span>
         {% endfor %}
       </form>
       <!-- Bootstrap JS -->

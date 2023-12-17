@@ -1,0 +1,23 @@
+body {
+    font-size: large;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px;
+}
+
+#item-list {
+    display: table;
+    margin: 0 auto;
+}
+
+label {
+    margin: 10px 0px;
+}
+
+
+input {
+    margin-right: 5px;
+}
+
