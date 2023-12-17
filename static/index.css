@@ -1,12 +1,12 @@
 body {
     font-size: large;
-    background-color: #d5edf1;
+    background-image: url('static/background.jpg');
 }
 
 h1 {
     text-align: center;
     margin: 50px;
-    font-family: 'Abril Fatface', serif;
+    font-family: 'Grandiflora One', cursive;
     font-size: 3em
 }
 
@@ -15,13 +15,14 @@ h1 {
     margin: 0 auto;
     padding: 20px;
     border-radius: 25px;
-    border: 2px solid #1e81b0;
+    border: 2px solid #9f8c7a;
     background-color: #FAF0E6;
 }
 
 label {
+    color: #585656;
     margin: 10px 0px;
-    font-family: 'Caveat', cursive;
+    font-family: 'Indie Flower', cursive;
 }
 
 
