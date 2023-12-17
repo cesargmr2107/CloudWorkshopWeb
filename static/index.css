@@ -1,15 +1,22 @@
 body {
     font-size: large;
+    background-color: #d5edf1;
 }
 
 h1 {
     text-align: center;
     margin: 50px;
+    font-family: 'Abril Fatface', serif;
+    font-size: 3em
 }
 
 #item-list {
     display: table;
     margin: 0 auto;
+    padding: 20px;
+    border-radius: 25px;
+    border: 2px solid #1e81b0;
+    background-color: #FAF0E6;
 }
 
 label {
