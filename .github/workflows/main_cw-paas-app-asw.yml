@@ -34,5 +34,5 @@ jobs:
       with:
         app-name: cw-paas-app-asw
         slot-name: Production
-        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C1EBC699FC314707B1C13A5786D38CA6 }}
+        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_FE7DD2D6A1844B3F8DFA1400C96A5762 }}
 
